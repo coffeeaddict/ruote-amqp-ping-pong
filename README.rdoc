@@ -1,0 +1,14 @@
+= Investigation into ruote, ruote-amqp and RabbitMQ
+
+This is a personal investigation into all-of-the-above. Now that it
+somewhat done, it can serve as an example for others.
+
+== Lessons learned
+
+* ruote is fairly complete, but the documentation isn't. Reading
+  carefully through the available resources (google-groups, and other
+  mailing lists) can be very usefull.
+* ruote-amqp needs lot's more documentation
+* ruote-amqp set's a default queue for listening on the receiver but
+  fails (for me anyway) to set a default reply_queue for participants
+
