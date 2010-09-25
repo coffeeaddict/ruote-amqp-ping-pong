@@ -26,6 +26,31 @@ somewhat done, it can serve as an example for others.
 You're on your own... But reading up on the prerequisites should give
 you all the info you need
 
+== Running the demo
+
+  # start the ping daemon
+  % chdir ping
+  % bin/ping
+
+  # now start the pong daemon
+  % chdir ../pong
+  % bin/pong
+
+  # and now, let's play a match
+  % chdir ../ping-pong-engine
+  % ruby lib/main.rb
+
+
+== Parts
+
+[ping-pong-enginge/]   The engine. It sets up a process-definition and a
+                       workitem and then plays ping with the 2 
+                       queue-listeners.
+[ping/]                The pinging participant. It sets the state of the
+                       ruote workitem to "ping".
+[pong/]                The ponging participant. It sets the state of the
+                       ruote workitem to "pong".
+
 == Hat-tips
 
 A lot of information and knowledge came from studying these projects:

@@ -3,4 +3,4 @@
 This is the ruote-engine (found in lib/main.rb) - it set's up an
 engine, a process definition and some participants.
 
-It performs ping and pong each 3 times
+It performs ping and pong each 3 times.

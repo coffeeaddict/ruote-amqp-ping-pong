@@ -1,6 +1,8 @@
 = Ping
 
-This is the ping worker. It sets the state of the workitem to 'ping'.
+This is the ping worke-horse. It listens to an AMQP enabled MQ for
+ruote workitems and sets the state of such a workitem to 'ping' and
+increments the count of the workitem by 1.
 
 == Daemon-kit
 

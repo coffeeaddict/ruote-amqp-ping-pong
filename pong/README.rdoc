@@ -1,9 +1,1 @@
-= Pong
-
-This is the pong worker. It sets the state of the workitem to 'pong'.
-
-== Daemon-kit
-
-This was produced with daemon-kit:
-
-  % daemon-kit -i ruote pong
+See ../ping/README.rdoc and mentally replace ping with pong
