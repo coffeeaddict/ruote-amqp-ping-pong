@@ -1,0 +1,62 @@
+GIT
+  remote: git://github.com/jmettraux/ruote.git
+  revision: 449210698d79cb906a96c84c117974c5cb988394
+  branch: ruote2.1
+  specs:
+    ruote (2.1.11)
+      rufus-cloche (>= 0.1.20)
+      rufus-dollar
+      rufus-json (>= 0.2.5)
+      rufus-mnemo (>= 1.1.0)
+      rufus-scheduler (>= 2.0.5)
+      rufus-treechecker (>= 1.0.3)
+
+GIT
+  remote: git://github.com/kennethkalmer/ruote-amqp.git
+  revision: 1ae324c661ca8608ac8ace7b3eb140079f20d5e6
+  branch: ruote2.1
+  specs:
+    ruote-amqp (2.1.10)
+      amqp (>= 0.6.7)
+      ruote (>= 2.1.10)
+
+GIT
+  remote: git://github.com/tmm1/amqp.git
+  revision: 8c757c364108b0fe0ae1b332bad28f741176fa00
+  specs:
+    amqp (0.6.7)
+      eventmachine (>= 0.12.4)
+
+GEM
+  remote: http://rubygems.org/
+  specs:
+    daemon-kit (0.1.8.1)
+      eventmachine (>= 0.12.10)
+    eventmachine (0.12.10)
+    json (1.2.3)
+    rspec (1.3.0)
+    ruby_parser (2.0.5)
+      sexp_processor (~> 3.0)
+    rufus-cloche (0.1.20)
+      rufus-json (>= 0.2.5)
+    rufus-dollar (1.0.2)
+    rufus-json (0.2.5)
+    rufus-mnemo (1.1.1)
+    rufus-scheduler (2.0.6)
+    rufus-treechecker (1.0.3)
+      ruby_parser
+    sexp_processor (3.0.5)
+    yajl-ruby (0.7.7)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  amqp!
+  daemon-kit
+  eventmachine
+  json
+  rspec
+  ruote!
+  ruote-amqp!
+  yajl-ruby
