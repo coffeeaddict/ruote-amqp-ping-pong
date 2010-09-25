@@ -1,1 +1,0 @@
-{"list":[["^ping$","inpa_:ping"],["^amqp$",["RuoteAMQP::Participant",{}]],["^pong$","inpa_:pong"],["^logger$","inpa_:logger"],["^alpha$","inpa_:alpha"]],"_rev":149,"put_at":"2010-09-25 06:48:55.124095 UTC","_id":"participant_list","type":"configurations"}
