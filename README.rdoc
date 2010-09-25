@@ -25,3 +25,18 @@ somewhat done, it can serve as an example for others.
 
 You're on your own... But reading up on the prerequisites should give
 you all the info you need
+
+== Hat-tips
+
+A lot of information and knowledge came from studying these projects:
+
+* meego-boss, by David Greaves
+  http://meego.gitorious.org/meego-infrastructure-tools/boss
+* ruote-rails-example, by Eric Dennis
+  http://github.com/threetee/ruote-rails-example
+
+
+The setup of this project is largely similar to that of meego-boss.
+
+The ruote-rails-example gave an understanding in connecting all the
+pieces as I tried to get it to work
