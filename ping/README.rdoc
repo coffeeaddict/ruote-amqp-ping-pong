@@ -1,0 +1,9 @@
+= Ping
+
+This is the ping worker. It sets the state of the workitem to 'ping'.
+
+== Daemon-kit
+
+This was produced with daemon-kit:
+
+  % daemon-kit -i ruote ping
