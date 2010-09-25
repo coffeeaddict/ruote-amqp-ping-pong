@@ -20,7 +20,7 @@ puts AMQP.settings.inspect
 
 engine = Ruote::Engine.new(
   Ruote::Worker.new(
-    Ruote::FsStorage.new("ruote_worker")
+    Ruote::FsStorage.new("ruote_data")
   )
 )
 
