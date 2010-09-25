@@ -12,3 +12,16 @@ somewhat done, it can serve as an example for others.
 * ruote-amqp set's a default queue for listening on the receiver but
   fails (for me anyway) to set a default reply_queue for participants
 
+== Prerequisites
+
+[ruote]          For the ping-pong-engine
+[ruote-amqp]     For the sake of the investigation ;-)
+[daemon-kit]     For ping and pong
+[rabbitmq]       Or another AMQP enabled Message Queue system
+[bundler]        The ping-pong-engine is set-up using this great piece of 
+                 software
+
+== Installing, etc.
+
+You're on your own... But reading up on the prerequisites should give
+you all the info you need
