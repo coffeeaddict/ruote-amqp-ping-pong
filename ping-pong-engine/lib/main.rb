@@ -1,6 +1,7 @@
 require 'rubygems'
 require 'bundler'
 Bundler.setup
+require 'json'
 require 'ruote'
 require 'ruote/storage/fs_storage'
 require 'ruote-amqp'
@@ -12,6 +13,12 @@ engine = Ruote::Engine.new(
   )
 )
 
+# let's start from zero
+engine.storage.clear
+
+# uncomment for lots of noisy information
+#engine.noisy = true
+
 # Configure AMQP
 { :host => 'localhost',
   :vhost => 'ruote',
@@ -21,23 +28,23 @@ engine = Ruote::Engine.new(
   AMQP.settings[k]=v
 }
 
-# uncomment for lots of usefull information
-# AMQP.logging = true
+# uncomment for lots of useful information
+#AMQP.logging = true
 
 # listen to the ruote_workitems queue for return-messages
-receiver = RuoteAMQP::Receiver.new(
+RuoteAMQP::Receiver.new(
   engine,
   :launchitems => false
 )
 
 # register ping and pong as participants to the game
-engine.register_participant :ping, RuoteAMQP::Participant, :queue => "ping"
-engine.register_participant :pong, RuoteAMQP::Participant, :queue => "pong"
+engine.register_participant :ping, RuoteAMQP::ParticipantProxy, :queue => "ping"
+engine.register_participant :pong, RuoteAMQP::ParticipantProxy, :queue => "pong"
 
 # we need a crowd as well
 engine.register_participant :logger do |workitem|
-  $stderr.puts "State: #{workitem.fields['state']}"
-  $stderr.puts "Count: #{workitem.fields['count']}"
+  STDERR.puts "State: #{workitem.fields['state']}"
+  STDERR.puts "Count: #{workitem.fields['count']}"
 end
 
 # and we need some one to initiate the game
@@ -88,3 +95,4 @@ if errs.size > 0
   puts "process #{err.wfid}"
   end
 end
+

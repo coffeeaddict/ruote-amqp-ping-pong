@@ -1,9 +1,11 @@
-source "http://rubygems.org"
-gem 'daemon-kit'
-gem 'amqp', :git =>"git://github.com/tmm1/amqp.git"
-gem 'ruote', :git => 'git://github.com/jmettraux/ruote.git', :branch => 'ruote2.1'
-gem 'ruote-amqp', :git => "git://github.com/kennethkalmer/ruote-amqp.git", :branch => 'ruote2.1'
+
+source 'http://rubygems.org'
+
 gem 'rspec'
-gem 'eventmachine'
+
 gem 'json'
 gem 'yajl-ruby'
+gem 'daemon-kit'
+gem 'ruote', :git => 'git://github.com/jmettraux/ruote.git'
+gem 'ruote-amqp', :git => 'git://github.com/kennethkalmer/ruote-amqp.git'
+
