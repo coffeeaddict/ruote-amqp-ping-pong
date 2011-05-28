@@ -1,17 +1,19 @@
 GEM
   remote: http://rubygems.org/
   specs:
-    amqp (0.7.0)
+    amqp (0.7.1)
       eventmachine (>= 0.12.4)
-    daemon-kit (0.1.8.1)
+    daemon-kit (0.1.8.2)
       eventmachine (>= 0.12.10)
     eventmachine (0.12.10)
-    json (1.2.3)
+    json (1.5.1)
+    safely (0.3.0)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
-  amqp (= 0.7.0)
+  amqp (= 0.7.1)
   daemon-kit
   json
+  safely

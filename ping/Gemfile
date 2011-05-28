@@ -1,7 +1,8 @@
 
 source 'http://rubygems.org'
 
+gem 'safely'
 gem 'daemon-kit'
-gem 'amqp', '0.7.0'
+gem 'amqp', '0.7.1'
 gem 'json' # Can be replaced with json_pure
 
