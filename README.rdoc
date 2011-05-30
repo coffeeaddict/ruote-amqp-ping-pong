@@ -3,23 +3,33 @@
 This is a personal investigation into all-of-the-above. Now that it
 somewhat done, it can serve as an example for others.
 
+== If it doesn't work
+
+a) try to fix it by yourself and then notify us (or send a pull request)
+b) complain on the ruote mailing list (http://groups.google.com/group/openwferu-users)
+or
+c) complain in the ruote IRC channel (freenode.net #ruote)
+
 == Lessons learned
 
 * ruote is fairly complete, but the documentation isn't. Reading
   carefully through the available resources (google-groups, and other
-  mailing lists) can be very usefull.
+  mailing lists) can be very useful.
 * ruote-amqp needs lot's more documentation
 * ruote-amqp set's a default queue for listening on the receiver but
   fails (for me anyway) to set a default reply_queue for participants
 
 == Prerequisites
 
-[ruote]          For the ping-pong-engine
-[ruote-amqp]     For the sake of the investigation ;-)
-[daemon-kit]     For ping and pong
 [rabbitmq]       Or another AMQP enabled Message Queue system
 [bundler]        The ping-pong-engine is set-up using this great piece of 
                  software
+
+[ruote]          For the ping-pong-engine
+[ruote-amqp]     For the sake of the investigation ;-)
+[daemon-kit]     For ping and pong
+
+(those 3 last are drawn thanks to bundler anyway)
 
 == Installing, etc.
 
@@ -29,17 +39,16 @@ you all the info you need
 == Running the demo
 
   # start the ping daemon
-  % chdir ping
+  % cd ping
   % bin/ping
 
   # now start the pong daemon
-  % chdir ../pong
+  % cd ../pong
   % bin/pong
 
   # and now, let's play a match
-  % chdir ../ping-pong-engine
+  % cd ../ping-pong-engine
   % ruby lib/main.rb
-
 
 == Parts
 
@@ -64,4 +73,5 @@ A lot of information and knowledge came from studying these projects:
 The setup of this project is largely similar to that of meego-boss.
 
 The ruote-rails-example gave an understanding in connecting all the
-pieces as I tried to get it to work
+pieces as I tried to get it to work.
+
